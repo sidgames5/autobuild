@@ -1,10 +1,10 @@
-var name = "example";
-var version = "1.0.0";
+#name example
+#version 1.0.0
 
-var os = ["linux", "windows"];
-var arch = ["amd64", "x86", "arm", "aarch64"];
+#os linux,windows
+#arch amd64,x86,arm,aarch64
 
-var collect_dirs = [];
-var collect_files = ["bin/example", "bin/example.exe"];
+#collect_dirs null
+#collect_files bin/example,bin/example.exe
 
-Sys.command("haxe build.hxml");
+haxe build.hxml
