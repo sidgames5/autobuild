@@ -1,3 +1,3 @@
 haxe build.hxml
-cp bin/builder/Main build/build
-cp bin/tester/Main build/atest
+cp bin/builder/Main bin/build
+cp bin/tester/Main bin/atest
