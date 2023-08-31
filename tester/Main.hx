@@ -57,6 +57,13 @@ class Main {
 			}
 		}
 
+		for (command in exec_queue) {
+			if (Sys.command(command) > 0) {
+				Sys.println('Failed to build: failed to execute \'$command\'');
+				Sys.exit(1);
+			}
+		}
+
 		if (Sys.command(config.test_command) > 0) {
 			Sys.println('Failed to test: failed to execute \'${config.test_command}\'');
 			Sys.exit(1);
