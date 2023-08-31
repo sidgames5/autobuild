@@ -31,7 +31,9 @@ class Main {
 			var line = script.split("\n")[i];
 			if (line.startsWith("#")) {
 				var k = line.split(" ")[0].substr(1);
-				var v = line.split(" ")[1];
+				var tv = line.split(" ");
+				tv.shift();
+				var v = tv.join(" ");
 
 				switch (k) {
 					case "name":
