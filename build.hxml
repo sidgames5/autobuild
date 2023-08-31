@@ -1,5 +1,11 @@
--cp src
+-cp builder
 -D analyzer-optimize
---library hscript
 -main Main
---interp
+--cpp bin/builder
+
+--next
+
+-cp tester
+-D analyzer-optimize
+-main Main
+--cpp bin/tester

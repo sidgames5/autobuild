@@ -7,4 +7,6 @@
 #collect_dirs null
 #collect_files bin/example,bin/example.exe
 
+#test_command bin/Main examples/Autobuild
+
 haxe build.hxml
