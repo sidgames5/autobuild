@@ -49,7 +49,7 @@ class Main {
 					case "collect_files":
 						config.collect_files = v.split(",");
 					case "test_command":
-						config.test_command = v;
+						config.test_command = line.substr("#test_command ".length);
 					default:
 						Sys.println('Autobuild: line ${i + 1}: invalid definition: \'$k\'');
 						Sys.exit(1);
