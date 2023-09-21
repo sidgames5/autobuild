@@ -1,1 +1,4 @@
 bin
+*.sig
+*.tar.gz
+*.tar.zst
